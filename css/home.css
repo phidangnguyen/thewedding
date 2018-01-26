@@ -177,7 +177,7 @@ body{
     transform: translateX(-50%);
     animation: big-logo;
     animation-duration: 3s;
-    animation-delay: 1s;
+    animation-delay: 2s;
 }
 @keyframes big-logo{
     0%{opacity: 0;top: -70px;}
