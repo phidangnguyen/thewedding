@@ -107,8 +107,6 @@
 }
 #aboutUs .row4 .timer .digit span:hover{
     border: 2px dotted rgba(0, 0, 0, 0.884);
-    width: 55px;
-    height: 55px;
     color: red;
     animation-name: change-border;
     animation-duration: 1s;
