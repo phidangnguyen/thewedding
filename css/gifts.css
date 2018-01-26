@@ -68,12 +68,12 @@
 }
 #gifts #submit {
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
     background: rgb(240, 121, 220);
     padding: 7px 15px;
     color: rgb(255, 255, 255);
     cursor: pointer;
-    box-shadow: 0 0 2px rgb(43, 0, 35);
+    box-shadow: 0 0 2px rgb(255, 255, 255);
 }
 #gifts #submit:hover{
     background: rgb(194, 50, 170);

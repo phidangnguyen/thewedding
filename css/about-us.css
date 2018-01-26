@@ -106,7 +106,7 @@
     color: rgba(0, 0, 0, 0.884);
 }
 #aboutUs .row4 .timer .digit span:hover{
-    border: 2px dotted rgba(0, 0, 0, 0.884);
+    border: 1px dotted rgba(0, 0, 0, 0.884);
     color: red;
     animation-name: change-border;
     animation-duration: 1s;

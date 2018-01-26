@@ -166,19 +166,57 @@ body{
     margin-top:-10px;
     position: relative;
 }
+
+/* Style big logo*/
 .main-banner .big-logo{
+    width: 500px;
+    height: 300px;
     position: absolute;
     left: 50%;
-    top:50%;
-    transform: translate(-50% ,-50%);
-    z-index: 1;
-    padding: 20px;
-    width: 400px;
+    top: 70px;
+    transform: translateX(-50%);
+    animation: big-logo;
+    animation-duration: 3s;
+    animation-delay: 1s;
 }
-.main-banner .big-logo img{
-    width: 100%;
-    height: auto;
+@keyframes big-logo{
+    0%{opacity: 0;top: -70px;}
+    100%{opacity: 1; top: 70px;}
 }
+
+
+
+.main-banner .big-logo h1,
+.main-banner .big-logo h2{
+    font-family:'vivaldi';
+    color: rgb(255, 255, 255);
+    position: absolute;
+}
+.main-banner .big-logo h1:first-child{
+    font-size: 12em;
+    top: 100px;
+    left: 0;
+}
+.main-banner .big-logo h1:nth-child(2){
+    font-size: 6em;
+    top: 180px;
+    left: 220px;
+}
+.main-banner .big-logo h2{
+    font-size: 5em;
+    top: 120px;
+    left: 295px;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* THIS IS STYLE FOOTER PAGE*/
 #footer-line{
@@ -240,7 +278,4 @@ body{
     }
     /* This is a style banner web*/
 
-    .main-banner .big-logo{
-        width: 300px;
-    }
 }
