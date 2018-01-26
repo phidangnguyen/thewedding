@@ -1,0 +1,183 @@
+
+/* --------///////////////////////////////////////////--- LOVE STORY -------------/////////////////////////////////////////----*/
+#loveStory{
+    background: rgb(245, 242, 242);
+    padding: 70px 0;
+}
+#loveStory .row1 h1{
+    width: 100%;
+    font-family: 'vnarabiah';
+    font-size: 2.5em;
+    margin-bottom: 20px
+}
+#loveStory .row1 h2{
+    width: 100%;
+    font-family:'vivaldi';
+    font-size: 2.5em;
+    margin: 0;
+}
+#loveStory .row1 h2 span{
+    font-family: 'vnsouthernh';
+    font-size: 32px;
+    color: rgba(243, 57, 163, 0.925);
+}
+
+#loveStory .row1 p{
+    padding: 30px;
+    font-weight: 400;
+}
+/* Time line block*/
+#loveStory .timeline-block{
+    width: 100%;
+    padding: 100px 0;
+    position: relative;
+}
+#loveStory .timeline-block-item{
+    position: relative;
+    margin: 30px 0;
+}
+/* Timeline right*/
+#loveStory .timeline-block-item.right{
+    display: flex;
+    justify-content: flex-end;
+}
+/* Timeline item IMAGE */
+#loveStory .timeline-block-item-img{
+    position: absolute;
+    left: 50%;
+    top: 30px;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+#loveStory .timeline-block-item-img img{
+    width: 50px;
+    height: auto;
+}
+/* Timeline item CONTENT left*/
+#loveStory  .timeline-block-item-content{
+    border: 1px solid rgba(31, 30, 30, 0.87);
+    width: 45%;
+    padding: 30px 20px;
+    box-shadow: 0 0 2px rgba(37, 35, 35, 0.788);
+    background: rgb(252, 210, 239);
+}
+.timeline-block-item-content h3 a{
+    font-family:'vivaldi';
+    font-size: 1.3em;
+    color: rgba(252, 18, 213, 0.925);
+}
+.timeline-block-item-content h3 a:hover{
+    color: rgba(177, 6, 148, 0.925)
+}
+
+.timeline-block-item-content p{
+    font-weight: 600;
+    color: rgb(39, 41, 40);
+}
+.timeline-block-item-content .button{
+    border: 1px solid rgb(255, 0, 170);
+    border-radius: 5px;
+    padding: 8px 10px;
+    background: rgb(0, 0, 0);
+    color: white;
+    font-weight: 400;
+}
+.timeline-block-item-content .button:hover{
+    color: rgb(151, 151, 209);
+}
+
+/*-------- Timeline Item Date------------*/
+#loveStory .timeline-item-date{
+    position: absolute;
+    top: 30px;
+    background: rgb(252, 35, 35);
+    height: 26px;
+    width: 110px;
+    text-align: center;
+    line-height: 26px;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+}
+
+/* Timeline item Date Right*/
+#loveStory .timeline-item-date.right{
+    left: 56%;
+}
+/* Timeline item Date left*/
+#loveStory .timeline-item-date.left{
+    right: 56%;
+}
+
+/*----------LINE -----------*/
+#loveStory .line{
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    background: rgba(31, 29, 29, 0.945);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+}
+#loveStory .line:before,
+#loveStory .line:after{
+    content: "";
+    background: url("../assets/Heart-Icon.png") no-repeat;
+    background-size: cover;
+    width: 60px;
+    height: 50px;
+    position: absolute;
+    left: -29px;
+}
+#loveStory .line:before{
+    top: -10px;
+}
+#loveStory .line:after{
+    bottom: -10px;
+}
+
+/* medium devices - screen width equal to or less than 768px*/ 
+@media only screen and (max-width : 768px){
+    /* --------///////////////////////////////////////////--- LOVE STORY -------------/////////////////////////////////////////----*/
+        /* Time line block*/
+        #loveStory .timeline-block-item{
+            display: flex;
+            justify-content: flex-end;
+        }
+        /* Timeline item IMAGE */
+        #loveStory .timeline-block-item-img{
+            left: 50px;
+            top: 5px;
+        }
+        /* Timeline item CONTENT left*/
+        #loveStory  .timeline-block-item-content{
+            width: 80%;
+        }
+            
+        .timeline-block-item-content h3{
+            text-align: center !important;
+        }
+        .timeline-block-item-content p{
+            text-align: center !important;
+        }
+        /*-------- Timeline Item Date------------*/
+        #loveStory .timeline-item-date{
+            top: 10px;
+        }
+    
+        /* Timeline item Date Right*/
+        #loveStory .timeline-item-date.right{
+            left: 100px;
+        }
+        /* Timeline item Date left*/
+        #loveStory .timeline-item-date.left{
+            right: 0;
+            left: 100px;
+        }
+    
+        /*----------LINE -----------*/
+        #loveStory .line{
+            top: 50%;
+            left: 50px;
+        }
+}

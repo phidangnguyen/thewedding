@@ -1,0 +1,18 @@
+/*- ------------------------------------------------------------------------------------------------------*/
+/* xlarge devices - screen width equal to or less than 1200px*/ 
+@media only screen and (max-width : 1200px) { 
+}
+
+/*- ------------------------------------------------------------------------------------------------------*/
+/*large devices - screen width equal to or less than 992px*/ 
+@media only screen and (max-width : 992px) { 
+} 
+
+/*- ------------------------------------------------------------------------------------------------------*/
+/* medium devices - screen width equal to or less than 768px*/ 
+@media only screen and (max-width : 768px) { 
+}
+/*- ------------------------------------------------------------------------------------------------------*/
+/*extra small devices - screen width less than 576px*/ 
+@media only screen and (max-width : 576px) { 
+}

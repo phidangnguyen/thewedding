@@ -1,0 +1,165 @@
+
+/* --------///////////////////////////////////////////-------- schedule -------------/////////////////////////////////////////----*/
+#schedule{
+    padding: 70px 0;
+}
+#schedule .row h2{
+    width: 100%;
+    font-family: 'vnarabiah';
+    font-size: 2.5em;
+}
+#schedule .row p{
+    width: 100%;
+    font-size: 15px;
+    margin: 20px 0;
+}
+#schedule .timeline{
+    list-style-type: none;
+    width: 100%;
+    padding: 100px 0 40px 0;
+
+}
+/* ROW 2*/
+#schedule .timeline li{
+    width: 25%;
+    float: left;
+    position: relative;
+    text-align: center;
+    height: 2px;
+    background: rgb(255, 0, 0);
+}
+#schedule .timeline li:before{
+    content: '';
+    position: absolute;
+    width: 3px;
+    height:10px;
+    background: rgb(255, 0, 0);
+    top: -4px;
+    border-radius: 50%;
+}
+#schedule .timeline li span{
+    position: absolute;
+    top: -40px;
+    transform: translateX(-50%);
+    font-family:'vivaldi';
+    font-weight: 600;
+    font-size: 18px;
+}
+/* Schedule event image*/
+#schedule .ev-img{
+    margin: 0 auto;
+    line-height: 140px;
+    position: relative;
+}
+#schedule .ev-img:before{
+    content: '';
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 2px solid rgb(29, 1, 1);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+#schedule .ev-img:hover:before{
+    border-style: dotted;
+    animation-name: event-hover;
+    animation-duration: 2s;
+}
+@keyframes event-hover{
+    0%{width: 50px; height: 50px; transform:rotate(0deg),translate(-50%,-50%);border-color:rgb(255, 0, 0);};
+    100%{width: 140px; height: 140px;transform:rotate(720deg),translate(-50%,-50%);};
+}
+
+#schedule .ev-img .fa{
+    font-size: 30px;
+    color: rgb(241, 31, 31);
+}
+#schedule .ev-img:hover .fa{
+    animation-name: change-size;
+    animation-duration: 1.5s;
+    font-size: 40px;
+}
+@keyframes change-size{
+    0%{font-size: 10px;};
+    100%{font-size: 40px;};
+}
+#schedule .ev-text{
+    font-size: 15px;
+    margin-top: 10px;
+}
+/*-------------- ROW 3-------------*/
+#schedule .row3{
+    margin-top: 100px;
+}
+#schedule .row3 h2{
+    font-family: 'vnsouthernh';
+    font-size: 2em;
+}
+/* -------------ROW 4--------------------*/
+.wrap-photo{
+    padding: 50px 0;
+}
+.wrap-photo .wrap-photo_photo{
+    padding: 40px 0;
+    position: relative;
+}
+.wrap-photo img{
+    max-width: 350px;
+    width: 60%;
+    height: auto;
+}
+.wrap-photo .bg-flowers{
+    position: absolute;
+    max-width: 350px;
+    width: 60%;
+    left: 50%;
+    transform: translate(-50%) rotate(-37deg);
+    bottom: 0px;
+}
+.wrap-photo .name{
+    padding: 20px 0;
+    font-family: 'IM Fell Double Pica', serif;
+    font-size: 2em; 
+    color: rgb(194, 24, 216);
+}
+.wrap-photo p.text-info{
+    padding: 0 30px;
+    color: rgb(32, 31, 31) !important;
+    font-weight: 400;
+}
+.wrap-photo .social-icon{
+    list-style-image: none;
+    padding: 0;
+}
+.wrap-photo .social-icon li{
+    display: inline-block;
+}
+.wrap-photo .social-icon a{
+    font-size: 22px;
+    border: 1px solid rgb(112, 107, 107);
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 0 5px; 
+    line-height: 27px;
+    color: rgb(104, 94, 94);
+}
+.wrap-photo .social-icon a:hover {
+    background: rgb(164, 114, 185);
+    color: rgb(240, 212, 212);
+}
+
+
+
+/*extra small devices - screen width less than 576px*/ 
+@media only screen and (max-width : 576px) { 
+    #schedule .ev-img:before{
+        display: none;
+    }
+    #schedule .ev-img{
+        line-height: 60px;
+    }
+}

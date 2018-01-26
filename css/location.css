@@ -1,0 +1,19 @@
+#location{
+    padding: 20px;
+}
+#location h2{
+    font-family: 'IM Fell Double Pica', serif;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 20px;
+}
+#location  p{
+    font-size: 15px;
+    margin: 20px 0 50px 0;
+}
+#location h4.ev-name{
+    font-family: 'IM Fell Double Pica', serif;
+}
+#location h4.ev-name + p{
+    font-weight: 400;
+}

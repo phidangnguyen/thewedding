@@ -1,0 +1,246 @@
+/*Import font*/
+@font-face{
+    src: url(../fonts/vivaldi.ttf);
+    font-family:'vivaldi';
+}
+@font-face{
+    src: url(../fonts/-vnlincolnh/.VnLincolnH.ttf);
+    font-family: 'VnLincolnH';
+}
+@font-face{
+    src: url(../fonts/IM_Fell_Double_Pica/IMFeDPrm28P.ttf);
+    font-family: 'IM Fell Double Pica', serif;
+}
+@font-face{
+    src: url(../fonts/vnlinus/.VnLinus.ttf);
+    font-family: 'VnLinus';
+}
+@font-face{
+    src: url(../fonts/vnarabiah.ttf);
+    font-family: 'vnarabiah';
+}
+@font-face{
+    src: url(../fonts/vnsouthernh.ttf);
+    font-family: 'vnsouthernh';
+}
+/*--------------------------------------------------------------*/
+/*Hot*/
+*{
+    font-weight: 500;
+}
+* a,
+* a:hover{
+    text-decoration: none;
+}
+/* Style Loading*/
+#loading{
+    position: fixed;
+    width: 100%;
+    top:0;
+    height: 100vh;
+    background: rgb(250, 250, 250);
+    z-index: 15;
+}
+#loading .icon-load{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+#loading .icon-load img{
+    height: 150px;
+    width: 150px;
+}
+/* This is a style Main menu and Navigation*/
+body{
+    background: rgb(255, 255, 255);
+}
+.main-menu{
+    background: rgba(0, 0, 0, 0.466);
+    padding: 10px 0;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+.main-menu:before,
+.main-menu:after{
+    content: "";
+    position: absolute;
+    border-top: 2px dashed rgba(227, 226, 233, 0.829);
+    width: 100%;
+}
+.main-menu:before{
+    top: 10px;
+}
+.main-menu:after{
+    bottom: 10px;
+}
+
+/*  Style menu content  */
+.content-menu{
+  justify-content: flex-end;
+}
+.content-menu ul .nav-item-menu{
+    padding: 0 .3rem;
+    text-align: center;
+}
+.main-menu ul .nav-item-menu a{
+    font-size: 15px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.829);
+    display: block;
+    position: relative;
+    font-weight: 400;
+}
+/* Hover content nav menu*/
+.main-menu ul .nav-item-menu a:hover{
+    color: rgb(241, 0, 201);
+}
+.main-menu ul .nav-item-menu a:active{
+    color: rgb(10, 10, 206);
+}
+
+
+.nav-item-menu a .heart-hover-item{
+    position: absolute;
+    font-size: 9px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+ /* Block heart item when hover content nav menu*/
+.nav-item-menu a:hover .heart-hover-item{
+    display: block;
+}
+/* Style logo wedding*/
+.main-menu .logo-web{
+    padding: 0;
+}
+.main-menu .logo-web img{
+    width: 85px;
+    height: auto;
+}
+/* Style navbar toggler*/
+
+.navbar-toggler{
+    cursor: pointer;
+}
+.bar1, .bar2, .bar3 {
+    width: 25px;
+    height: 2px;
+    background-color: rgb(243, 234, 234);
+    margin: 6px 0;
+    border-radius: 3px;
+    transition: 0.9s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 5px);
+    transform: rotate(-45deg) translate(-6px, 5px);
+    background-color: rgb(247, 0, 0);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -6px);
+    transform: rotate(45deg) translate(-6px, -6px);
+    background-color: rgb(255, 0, 0);
+}
+/* This is a style nave menu clone*/
+.main-menu.clone{
+    background: rgb(24, 23, 23);
+    position: fixed;
+    display: none;
+}
+/*----------------------------------------------------------------------------------------------*/
+/* This is a style banner web*/
+.main-banner{
+    background-image: url("../assets/banner.jpg");
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
+    margin-top:-10px;
+    position: relative;
+}
+.main-banner .big-logo{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50% ,-50%);
+    z-index: 1;
+    padding: 20px;
+    width: 400px;
+}
+.main-banner .big-logo img{
+    width: 100%;
+    height: auto;
+}
+
+/* THIS IS STYLE FOOTER PAGE*/
+#footer-line{
+    width: 100%;
+    height: 120px;
+    line-height: 120px;
+    background: black;
+    color: rgb(240, 228, 228);
+    position: relative;
+}
+#footer-line:before,
+#footer-line:after{
+    content: "";
+    position: absolute;
+    border-top: 2px dashed rgba(227, 226, 233, 0.829);
+    width: 100%;
+    left:0;
+}
+#footer-line:before{
+    top: 10px;
+}
+#footer-line:after{
+    bottom: 10px;
+}
+/* medium devices - screen width equal to or less than 768px*/ 
+@media only screen and (max-width : 768px){
+    /* Set width container fluid*/
+    .container{
+        max-width: 768px;
+        width: 100%;    
+    }
+    .main-menu{
+        background: rgb(24, 23, 23);
+    }
+    .content-menu ul{
+        margin: 20px 0;
+        position: relative;
+    }
+    .content-menu ul:before{
+        content: "";
+        position: absolute;
+        width: 75%;
+        height: 1px;
+        background: rgb(218, 205, 205);
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        animation: line-top;
+        animation-duration: 2s;
+    }
+    @keyframes line-top{
+        0%{width: 20%}
+        100%{width: 75%}
+    }
+
+    .content-menu ul .nav-item-menu{
+        padding: .6rem 0;
+        text-align: center;
+    }
+    /* This is a style banner web*/
+
+    .main-banner .big-logo{
+        width: 300px;
+    }
+}

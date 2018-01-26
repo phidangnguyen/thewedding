@@ -1,0 +1,27 @@
+#gallery{
+    padding-bottom: 70px;
+}
+#gallery h2{
+    font-family: 'IM Fell Double Pica', serif;
+    font-size: 2.5em;
+    text-align: center;
+}
+#gallery  p{
+    font-size: 15px;
+    margin: 20px 0;
+}
+#gallery p span{
+    color: rgb(230, 54, 177);
+}
+#gallery .owl-carousel{
+    margin: 50px 0;
+}
+
+#gallery .owl-carousel .owl-prev,
+#gallery .owl-carousel .owl-next{
+    background: rgb(240, 121, 220);
+}
+#gallery .owl-carousel .owl-prev:hover,
+#gallery .owl-carousel .owl-next:hover{
+    background: rgb(194, 50, 170);
+}

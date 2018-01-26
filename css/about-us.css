@@ -1,0 +1,198 @@
+
+/* --------///////////////////////////////////////////--- About US -------------/////////////////////////////////////////----*/
+#aboutUs{
+    padding: 50px 0;
+    background: rgba(252, 132, 222, 0.233);
+}
+#aboutUs .row{
+    padding: 30px 0;
+}
+/* Row 1*/
+#aboutUs .row1 .name-couple{
+    width: 100%;
+    font-family: 'vnsouthernh';
+    font-size: 2.3em;
+}
+.border-flower{
+    width: 100%;
+}
+.border-flower img{
+    width: 100px;
+    height: auto;
+}
+#aboutUs .row1 p{
+    width: 100%;
+    font-size: 15px;
+    margin: 20px 0;
+}
+/*  Row 2*/
+#aboutUs .row2 .img-bride-groom img{
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+}
+#aboutUs .row2 .bride,
+#aboutUs .row2 .groom{
+    margin-top: 100px;
+}
+
+#aboutUs .row2 h2{
+    font-size: 1.7em;
+    font-family: 'IM Fell Double Pica', serif;
+    margin: 0;
+    color: rgb(235, 38, 38);
+}
+#aboutUs .row2 p{
+    font-size: 15px;
+    color: rgb(219, 42, 42);
+}
+/* Row 3*/
+#aboutUs .row3{
+    position: relative;
+}
+#aboutUs .row3 .content-text{
+    padding: 0 30px
+}
+#aboutUs .row3 .line-center{
+    position: absolute;
+    height: 80%;
+    width: 2px;
+    background: rgb(83, 81, 81);
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%,-50%);
+}
+#aboutUs .row3 p{
+    font-weight: 400;
+}
+#aboutUs .row3 h1{
+    font-family: 'IM Fell Double Pica', serif;
+    font-weight: 400;
+    color: rgb(41, 37, 39);
+}
+/* Row 4*/
+#aboutUs .row4{
+    padding: 100px 0;
+}
+#aboutUs .row4 h1{
+    width: 100%;
+    font-family: 'IM Fell Double Pica', serif;
+    font-size: 2em;
+}
+#aboutUs .row4 p{
+    width: 100%;
+    font-size: 15px;
+    margin: 20px 0;
+}
+/*        ---------Timer ----------      */
+#aboutUs .row4 .timer{
+    width: 100%;
+    margin-top: 50px;
+}
+#aboutUs .row4 .timer .time-item{
+    display: inline-block;
+    margin: 0 20px;
+}
+#aboutUs .row4 .timer .digit span{
+    border: 1px solid rgba(49, 49, 49, 0.884);
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 45px; 
+    font-family: 'VnLinus';
+    font-size: 35px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.884);
+}
+#aboutUs .row4 .timer .digit span:hover{
+    border: 2px dotted rgba(0, 0, 0, 0.884);
+    width: 55px;
+    height: 55px;
+    color: red;
+    animation-name: change-border;
+    animation-duration: 1s;
+}
+/* Animation Change border*/
+@keyframes change-border{
+    0%{transform: rotate(0deg); border-color: red;}
+    20%{border-color: rgb(255, 0, 55)}
+    40%{border-color: rgb(255, 0, 221)}
+    60%{border-color: rgb(68, 0, 255)}
+    80%{border-color: rgb(26, 19, 90)}
+    100%{transform: rotate(360deg); border-color: rgb(71, 71, 73);}
+}
+#aboutUs .row4 .timer .smalltext{
+    font-size: 15px;
+    margin-top: 10px;
+    color: rgb(95, 95, 95);
+}
+#aboutUs .row4 .timer .days,
+#aboutUs .row4 .timer .seconds{
+    position: relative;
+}
+#aboutUs .row4 .timer .days:before,
+#aboutUs .row4 .timer .seconds:after{
+    content: "......";
+    position: absolute;
+    font-size: 40px;
+    color: #b1a4a4;
+    top: -18px;
+}
+#aboutUs .row4 .timer .days:before{
+    left: -66px;
+    
+}
+#aboutUs .row4 .timer .seconds:after{
+    left: 115px;
+}
+
+/* medium devices - screen width equal to or less than 768px*/ 
+@media only screen and (max-width : 768px) {
+/* --------/////////////////////////////--- About US -------------/////////////////////////////////////////----*/
+        
+    /*  Row 2*/
+    #aboutUs .row2 .bride,
+    #aboutUs .row2 .groom{
+        margin-top: 0px;
+        text-align: center !important;
+    }
+    #aboutUs .row2 .groom{
+        margin-top: 10px;
+    }
+/*----Row 3-------*/
+    #aboutUs .row3 .line-center{
+        display: none;
+    }
+    /*        ---------Timer ----------      */
+    #aboutUs .row4 .timer{
+        width: 100%;
+        margin-top: 50px;
+    }
+    #aboutUs .row4 .timer .time-item{
+        display: block;
+        margin-bottom: 40px;
+    }
+    #aboutUs .row4 .timer .digit span{
+        border: 1px solid rgba(49, 49, 49, 0.884);
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        line-height: 50px;
+        font-family: 'vivaldi';
+        font-size: 25px;
+        font-weight: 600;
+        color: rgba(49, 49, 49, 0.884);
+    }
+    /*-------------------------------------------------------------*/
+    #aboutUs .row4 .timer .smalltext{
+        font-size: 15px;
+        margin-top: 10px;
+        color: rgb(95, 95, 95);
+    }
+    #aboutUs .row4 .timer .days:before,
+    #aboutUs .row4 .timer .seconds:after{
+        display: none;
+    }
+}
